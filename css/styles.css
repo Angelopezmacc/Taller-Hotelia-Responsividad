@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;400;500;700&display=swap');
+
+
+:root{
+--azulclaro: #48D6ED;
+--azuloscuro: #337AB7;
+--azulnegro: #303342;
+--negro: #333333;
+--negro2: #000;
+--gris: #B2B3B3;
+--fondo: #FFFEFC;
+--verdeazul: #157A8A;
+--Magenta: #9C2759;
+--blanco: #fff;
+--degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+*{margin:0;}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+}
+h1,h2,h3,h4,h5{font-family: 'Marcellus', serif;}
+h1{font-size: 3.6rem;}
+h2{font-size: 3.4rem;}
+h3{font-size: 3.2rem;}
+
+nav{
+    display: flex;
+    position: fixed;
+    z-index: 3;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0,.8);
+    font-family: 'Marcellus', serif;
+    font-size: 1.3em;
+    width: 100%;
+}
+.logo{
+    background-color: var(--negro2);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    width: 40%;
+    max-width: 200px;
+    padding: 1rem;
+}
+.logo i{
+    color: var(--blanco);
+    font-size: 2rem;
+    padding: 1rem;
+}
+.menu{
+    background-color: rgba(1, 10, 52, 0.8);
+    width: 100%;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu-hr{
+    width: 90%;
+    background-color: var(--blanco);
+    }
+.item{padding: 1rem;}
+nav a{
+    color: var(--blanco);
+    text-decoration: none;
+    text-align: center;
+}
+nav a:hover{
+    background-color: #0B3860;
+}
+.navbar-button{
+    background-color:transparent;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    padding: 0.5rem;
+    font-family: 'Marcellus', serif;
+    color: var(--blanco);
+}
+/*----------------------BANNER------------------------------*/
+.banner{
+    width: 100%;
+    min-height: 310px;
+    height: 320px;
+    background-image: url(../img/index/slide1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.banner .slide1{
+    background: linear-gradient(180deg, rgba(54, 54, 54, 0.4) 0%, rgba(54,54,54,0.4) 17%, rgba(94, 94, 94, 0.2) 68%);
+    border: none;
+    box-sizing: border-box;
+    color: var(--blanco);
+    min-width: 100%;
+    margin-top: auto;
+    padding: 10px;
+}
+.banner .slide1 p{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+/*----------------------DESCRIPCIÓN----------------------------*/
+.descripcion{padding: 1rem;}
+.imagen_descripcion{display: none;}
+/*----------------------FEATURES----------------------------*/
+#features{
+    background: url("../img/index/bg-features.png");
+    color: white;
+    padding-top: 1rem;
+}
+.features-title{
+    background-color: rgba(0,0,0,0.35);
+    text-align: center;
+    padding: 1rem;
+    font-size: 3.4rem;
+}
+.features-description{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.feature{
+    width: 25%;
+    min-width: 180px;
+    max-width: 230px;
+    margin: 0.8rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.feature i{
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+}
+.feature-blue{background-color: #00325eae; font-size: 1.4rem;}
+.feature-black{background-color: rgba(0,0,0,0.59); font-size: 1.4rem;}
+
+
+/*-----------------------UBICACION------------------------*/
+
+.ubicacion{
+    text-align: center;
+    margin: 50px 0 50px 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem;
+}
+.ubicacion img{width: 100%;}
+.ubicacion .direccion{
+    font-size: 1.6rem;
+    border-bottom: 1px solid var(--azulnegro);
+    width: 50%;
+    margin: 20px auto 20px auto;
+}
+
+/*-----------------------COMENTARIOS------------------------*/
+.comentarios{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--negro);
+    height: 200px;
+    padding: 1rem;
+}
+.comentarios h2{
+    font-size: 3.5rem;
+    color: var(--blanco);
+}
+.comentarios_cards{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /*overflow: hidden;*/
+}
+.card{
+    background: var(--degradado);
+    box-sizing: border-box;
+    width: 90%;
+    min-width: 300px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+.card-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--blanco);
+    position: relative;
+}
+.card-head .vector{
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.card-head .foto-perfil{
+    width: 25%; 
+    z-index: 2; 
+    padding: 1.5rem;
+}
+.card-head .foto-perfil img{
+    border-radius: 100%;
+    width: 100%;
+}
+.card-head .info{
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 0 1.7rem 0 0;
+    z-index: 2;
+    width: 65%;
+}
+.card-head .info img{
+    width: 100%;
+    max-width: 160px;
+}
+
+.card-body {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    color: var(--blanco);
+    font-size: 1rem;
+}
+.card-body p{font-size: 1.4rem;}
+.card1{position: absolute; left: 0;}
+.card2,.card3{display: none;}
+
+.p_pagina{
+    background-color: var(--negro);
+    font-size: 1rem;
+    padding: 1rem;
+    font-family: "Marcellus";
+    color: var(--blanco);
+    position: relative;
+    top: 350px;
+}
+.p_pagina .text_footer{padding:5px; border-bottom:  1px solid var(--blanco);}
+.p_pagina .info_footer{border-bottom: 1px solid var(--blanco);}
+.p_pagina .info_footer_element{display: flex;}
+.p_pagina .info_footer_element i, .p_pagina .info_footer_element p{padding: 5px;}
+.p_pagina a{
+    color: var(--blanco);
+    text-decoration: none;
+}
+.p_pagina .politicas_footer{
+    border-bottom: 1px solid var(--blanco);
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.p_pagina .social_footer{padding: 10px;}
+.p_pagina .social_footer i{
+    font-size: 1.4rem;
+    margin-right: 5px;
+}
+/*Resolución notebooks*/
+@media screen and (min-width: 1024px){
+    nav{
+        display: flex;
+        flex-direction: row; 
+        width: 100%;
+        justify-content: space-between;
+        background-color: var(--negro2);
+    }
+    .logo{padding: 1rem;}
+    .logo img{
+        width: 100%;
+        max-width: 180px;
+    }
+    .logo i{display: none;}
+    .menu{
+        background-color: var(--negro2);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .menu-hr{display: none;}
+    .navbar-button{background-color:var(--azuloscuro);}
+    .banner{height: 1120px;}
+    .banner .slide1 p{font-size: 3rem;}
+    .descripcion{
+        display: flex;
+        padding: 2rem 10rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .descripcion .texto_descripcion{
+        width: 50%;
+        padding: 1rem;
+        margin-right: 2rem;
+        font-size: 1.6rem;
+        margin-left: 2rem;
+    }
+    .imagen_descripcion{
+        width: 50%;
+        display: inline;
+        text-align: center;
+    }
+    .ubicacion img{width: 80%;}
+    .comentarios_cards{
+        display: flex;
+        justify-content: space-between;
+    }
+    .comentarios_cards:last-child{margin-right: 0;}
+    .card{
+        margin-right: 10px;
+        width: 30.3%;
+    }
+    .card1,.card2,.card3{position: absolute; display: block;}
+    .card1{left: 0%;}
+    .card2{left: 35%}
+    .card3{left: 70%;}
+    /*------------------------------------ESTILOS FORMULARIO DE REGISTRO---------------------------------*/
+    .p_pagina{
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.4rem;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+        top: 300px;
+    }
+    .p_pagina .text_footer{width: 40%; border:none;}
+    .p_pagina .info_footer{width: 20%; border: none;}
+    .p_pagina .politicas_footer{width: 30%; border: none;}
+    .social_footer{width: 100%;}
+    .social_footer i{font-size: 2rem;}
+}
