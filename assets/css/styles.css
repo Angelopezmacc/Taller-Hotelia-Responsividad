@@ -100,7 +100,7 @@ h1,h2,h3,h4,h5{
     }
 
     .datos input{
-        height: 6%;
+        height: 20px;
         width: 97%;
     }
 
@@ -109,7 +109,7 @@ h1,h2,h3,h4,h5{
     }
 
     #tipoDocumento{
-        height: 6%;
+        height: 25px;
         width: 100%;
     }
 
@@ -147,3 +147,97 @@ h1,h2,h3,h4,h5{
     }
 }
 
+
+/* Versión escritorio */
+
+@media screen and (min-width: 769px){
+
+    body{
+        display: flex;
+    }
+
+    .header{
+        height: 665px;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+        color: var(--blanco);
+        background: linear-gradient(to right, #357baa, #0C3C59);
+        opacity: 0.9;
+    }
+
+    .header h1{
+        text-align: center;
+        margin-top: 3%  ;
+    }
+
+    .header h2{
+        display: none;
+    }
+
+    .form form{
+        width: 78%;
+        padding: 3%;
+        margin: 3%  8% 0% 8%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: rgb(255, 255, 255, 0.8);
+    }
+
+    .form h1{
+        width: 100%;
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 2%;
+    }
+
+    .datos{
+        width: 45%;
+        height: 60px;
+        margin: .5% 2%;
+    }
+    
+    form label{
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .datos input{
+        margin-top: 1%;
+        height: 40%;
+        width: 90%;
+    }
+    #tipDoc{
+        margin-top: 1%;
+        height: 45%;
+        width: 91%;
+    }
+    #paisNa{
+        margin-top: 1%;
+        height: 45%;
+        width: 91%;
+    }
+    .generos{
+        width: 100%;
+        display: flex;
+    }
+    .generos input{
+        width: 40px;
+    }
+
+    button{
+        margin-top: 5%;
+        width: 50%;
+        height: 40px;
+        background-color: #000;
+        text-align: center;
+        color: var(--blanco);
+    }
+
+
+
+}
