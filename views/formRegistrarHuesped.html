@@ -141,11 +141,33 @@
 
             <!-- Términos y condiciones -->
             <div class="tyc">
-
-                <input type="checkbox" name="tyc">
-                <label for="tyc" >Acepto Términos y condiciones</label><br>
+                <input type="checkbox" id="tyc" name="tyc">
+                <label for="tyc">Acepto <a href="#openModal">Términos y condiciones</a></label><br>
                 <button>Ingresar</button>
             </div>
+            
+            <div id="openModal" class="modalDialog">
+                <div>
+                    <a href="#close" title="Cerrar" class="close">X</a>
+                    <h2>Términos y condiciones</h2>
+                    <p>
+                        Estos son los terminos del servicio 
+                        que reflejan la forma de trabjar de Google
+                        como empresa, las leyes por las que nos regismos
+                        y determinados aspectos que siempre hemos creido 
+                        que son ciertos. Por ellos, estos terminos del servicio
+                        ayudan a definir la relación que tiene Google 
+                        contigo cuando interactuas con nuestros servicios. Por 
+                        ejemplo, estos terminos incluyen las siguientes secciones:
+                        <br><br>
+                        Que puedes esperar de nosotros, donde se describe 
+                        como proporcionamos y desarrollamos nuestros servicios.
+                        Lo que esperamos de ti, donde se establecen ciertas
+                        reglas para utilizar nuestros servicios.  
+                    </p>
+                </div>
+            </div>
+            
 
         </form>
     </div>

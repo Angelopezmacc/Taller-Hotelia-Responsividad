@@ -145,6 +145,71 @@ h1,h2,h3,h4,h5{
         text-align: center;
         color: var(--blanco);
     }
+
+    .modalDialog {
+        position: fixed;
+        font-family: 'Roboto', sans-serif;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.8);
+        z-index: 99999;
+        opacity:0;
+        -webkit-transition: opacity 400ms ease-in;
+        -moz-transition: opacity 400ms ease-in;
+        transition: opacity 400ms ease-in;
+        pointer-events: none;
+    }
+    
+    .modalDialog:target {
+        opacity:1;
+        pointer-events: auto;
+    }
+    
+    .modalDialog > div {
+        width: 400px;
+        position: relative;
+        margin: 10% auto;
+        border-radius: 10px;
+        background: var(--blanco);
+    }
+    
+    .modalDialog h2 {
+        display: block;
+        width: 100%;
+        background: var(--azuloscuro);
+        color: var(--blanco);
+        padding: 10px;
+        font-size: 1.5em;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .modalDialog p {
+        padding: 5px 20px 13px 20px;
+    }
+    
+    .close {
+        background: var(--negro);
+        color: var(--blanco);
+        line-height: 25px;
+        position: absolute;
+        right: -12px;
+        text-align: center;
+        top: -10px;
+        width: 24px;
+        text-decoration: none;
+        font-weight: bold;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+        -moz-box-shadow: 1px 1px 3px var(--negro2);
+        -webkit-box-shadow: 1px 1px 3px var(--negro2);
+        box-shadow: 1px 1px 3px var(--negro2);
+    }
+    
+    .close:hover { background: var(--azulclaro); }
 }
 
 
@@ -238,6 +303,69 @@ h1,h2,h3,h4,h5{
         color: var(--blanco);
     }
 
-
-
+    .modalDialog {
+        position: fixed;
+        font-family: 'Roboto', sans-serif;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.8);
+        z-index: 99999;
+        opacity:0;
+        -webkit-transition: opacity 400ms ease-in;
+        -moz-transition: opacity 400ms ease-in;
+        transition: opacity 400ms ease-in;
+        pointer-events: none;
+    }
+    
+    .modalDialog:target {
+        opacity:1;
+        pointer-events: auto;
+    }
+    
+    .modalDialog > div {
+        width: 400px;
+        position: relative;
+        margin: 10% auto;
+        border-radius: 10px;
+        background: var(--blanco);
+    }
+    
+    .modalDialog h2 {
+        display: block;
+        width: 100%;
+        background: var(--azuloscuro);
+        color: var(--blanco);
+        padding: 10px;
+        font-size: 1.5em;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .modalDialog p {
+        padding: 5px 20px 13px 20px;
+    }
+    
+    .close {
+        background: var(--negro);
+        color: var(--blanco);
+        line-height: 25px;
+        position: absolute;
+        right: -12px;
+        text-align: center;
+        top: -10px;
+        width: 24px;
+        text-decoration: none;
+        font-weight: bold;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+        -moz-box-shadow: 1px 1px 3px var(--negro2);
+        -webkit-box-shadow: 1px 1px 3px var(--negro2);
+        box-shadow: 1px 1px 3px var(--negro2);
+    }
+    
+    .close:hover { background: var(--azulclaro); }
+    
 }
