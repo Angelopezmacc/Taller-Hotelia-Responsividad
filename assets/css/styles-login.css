@@ -66,6 +66,16 @@ body{
     width: 70%;
 }
 
+.espa label{
+    margin-top: 5%;
+    font-size: 20px;
+    
+}
+
+.espa input{
+    height: 23px;
+}
+
 .contenido button{
     background-color: black;
     color: aliceblue;
@@ -121,7 +131,17 @@ body{
     width: 70%;
 }
 
+.espa label{
+    margin-top: 7%;
+    font-size: 20px;
+    color: aliceblue;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+.espa input{
+    height: 23px;
+}
 
 .contenido button{
     background-color: black;
@@ -135,5 +155,7 @@ body{
 .contenido p{
     display: none;
 }
+
+
 
 }
