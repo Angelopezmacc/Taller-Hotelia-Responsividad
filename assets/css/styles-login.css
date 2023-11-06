@@ -40,6 +40,11 @@ body{
     margin: 10% 37%;
 }
 
+.caja1 .img2{
+    width: 40%;
+    margin-top: -30%;
+    margin-left: 5%;
+}
 
 .contenido{
     display: flex;
@@ -57,10 +62,18 @@ body{
     width: 70%;
 }
 
+.contenido button{
+    background-color: black;
+    color: aliceblue;
+    width: 70%;
+    margin-top: 8%;
+    padding: 1% 0;
+}
 
-
-
-
+.contenido p{
+    margin-top: 2%;
+    margin-bottom: 7%;
+}
 
 }
 
@@ -78,7 +91,11 @@ body{
     margin: 40% 10%;
 }
 
-
+.caja1 .img2{
+    width: 40%;
+    margin-top: -30%;
+    margin-left: 5%;
+}
 
 .contenido{
     display: flex;
@@ -98,9 +115,17 @@ body{
 
 
 
+.contenido button{
+    background-color: black;
+    color: aliceblue;
+    width: 70%;
+    height: 30px;
+    margin-top: 10%;
+    padding: 1% 0;
+}
 
-
-
-
+.contenido p{
+    display: none;
+}
 
 }
