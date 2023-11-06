@@ -168,7 +168,7 @@ html{
     button{
         padding: 3% 5%;
         background-color: #000;
-        color: rgb(40, 40, 40);
+        color: rgb(220, 220, 220);
     }
 }
 
@@ -261,6 +261,7 @@ html{
         width: 87%;
         margin-right: 0px;
         display: flex;
+        
     }
     .imagen2{
         width: 20%;
@@ -351,6 +352,9 @@ html{
     .generos input{
         width: 40px;
     }
+    label{
+        font-size: 15px;
+    }
     .Actualizar{
         width: 100%;
     }
@@ -366,8 +370,12 @@ html{
         margin-left: 2.5%;
         width: 15%;
         height: 40px;
-        color: rgb(68, 63, 63);
+        background-color: #000;
         text-align: center;
         color: var(--blanco);
     }
+}
+
+#fuera{
+    color:#FFFEFC
 }
